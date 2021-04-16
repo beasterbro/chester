@@ -1,0 +1,22 @@
+Name:		Emily Howell	Adam Stewart 	Ally Dinhofer 
+Case ID: 	eth35 		axs1477		abd54
+
+https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/LangImpl01.html
+
+1.1. The Kaleidoscope Language
+	This subsection has no code associated with it. It simply explains the extent of 
+		the Kaleidoscope language. Procedural language that has support for defining 
+		function, using conditionals, mathematical calculations, and calling into 
+		standard library functions. 
+
+1.2. The Lexer
+	The Lexer breaks the input into Tokens. First it removed the whitespace, then 
+		identifies keywords, then handles comments, and lastly identifies operator 
+		characters. We compiled all of the code for this subsection into the file 
+		lexer.cpp.
+
+For this chapter we added an empty main function to the end of it to verify that it 
+	would compile. We also had to add '#include <string>' to the top so that it would
+	compile properly. The instructions in the tutorial didn't have any explained 
+	method for testing this code out in this chapter so We are going to move onto the
+	next chapter without doing so.
