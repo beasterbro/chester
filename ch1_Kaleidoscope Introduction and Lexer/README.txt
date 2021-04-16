@@ -1,7 +1,11 @@
 Name:		Emily Howell	Adam Stewart 	Ally Dinhofer 
 Case ID: 	eth35 		axs1477		abd54
 
+____________________________________________________________________________________
+
 https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/LangImpl01.html
+____________________________________________________________________________________
+
 
 1.1. The Kaleidoscope Language
 	This subsection has no code associated with it. It simply explains the extent of 
