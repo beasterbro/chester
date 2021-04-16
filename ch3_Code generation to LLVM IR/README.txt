@@ -7,9 +7,25 @@ https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/LangImpl03.html
 ____________________________________________________________________________________
 
 
+Compilation:
+clang++ -g -O3 toy.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core` -o toy
+
+Running it:
+./toy
+
+____________________________________________________________________________________
+____________________________________________________________________________________
+
+
 3.1. Chapter 3 Introduction
+	This chapter of the tutorial covers how to turn the AST from the previous
+	chapter into LLVM IR.
 
 3.2. Code Generation Setup
+	Define codegen() methods in each class. This simply instructs the AST to
+	generate IR for for that AST node and then return an LLVM Value object.
+	This section also covers creating a virtual method to implement a visitors
+	pattern as well as an error logging functionality. 
 
 3.3. Expression Code Generation
 

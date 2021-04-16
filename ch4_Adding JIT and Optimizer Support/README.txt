@@ -7,6 +7,16 @@ https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/LangImpl04.html
 ____________________________________________________________________________________
 
 
+Compilation:
+clang++ -g toy.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core orcjit native` -O3 -o toy
+
+Running it:
+./toy
+
+____________________________________________________________________________________
+____________________________________________________________________________________
+
+
 4.1. Chapter 4 Introduction
 
 4.2. Trivial Constant Folding

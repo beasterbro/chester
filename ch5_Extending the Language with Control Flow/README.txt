@@ -7,6 +7,16 @@ https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/LangImpl05.html
 ____________________________________________________________________________________
 
 
+Compilation:
+clang++ -g toy.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core orcjit native` -O3 -o toy
+
+Running it:
+./toy
+
+____________________________________________________________________________________
+____________________________________________________________________________________
+
+
 5.1. Chapter 5 Introduction
 
 5.2. If/Then/Else

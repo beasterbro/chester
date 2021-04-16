@@ -7,6 +7,16 @@ https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/LangImpl07.html
 ____________________________________________________________________________________
 
 
+Compilation:
+clang++ -g toy.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core orcjit native` -O3 -o toy
+
+Running it:
+./toy
+
+____________________________________________________________________________________
+____________________________________________________________________________________
+
+
 7.1. Chapter 7 Introduction
 
 7.2. Why is this a hard problem?

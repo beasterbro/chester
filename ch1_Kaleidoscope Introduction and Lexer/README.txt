@@ -8,19 +8,22 @@ ________________________________________________________________________________
 
 
 1.1. The Kaleidoscope Language
-	This subsection has no code associated with it. It simply explains the extent of 
-		the Kaleidoscope language. Procedural language that has support for defining 
-		function, using conditionals, mathematical calculations, and calling into 
-		standard library functions. 
+	This subsection has no code associated with it. It simply explains the extent 
+	of the Kaleidoscope language. Procedural language that has support for 
+	defining function, using conditionals, mathematical calculations, and calling 
+	into standard library functions. 
 
 1.2. The Lexer
 	The Lexer breaks the input into Tokens. First it removed the whitespace, then 
-		identifies keywords, then handles comments, and lastly identifies operator 
-		characters. We compiled all of the code for this subsection into the file 
-		lexer.cpp.
+	identifies keywords, then handles comments, and lastly identifies operator 
+	characters. We compiled all of the code for this subsection into the file 
+	lexer.cpp.
+____________________________________________________________________________________
 
-For this chapter we added an empty main function to the end of it to verify that it 
-	would compile. We also had to add '#include <string>' to the top so that it would
-	compile properly. The instructions in the tutorial didn't have any explained 
-	method for testing this code out in this chapter so We are going to move onto the
-	next chapter without doing so.
+Notes:
+
+(1)	For this chapter we added an empty main function to the end of it to verify 
+	that it would compile. We also had to add '#include <string>' to the top so 
+	that it would compile properly. The instructions in the tutorial didn't have 
+	any explained method for testing this code out in this chapter so We are going 
+	to move onto the next chapter without doing so.
