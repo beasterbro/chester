@@ -25,4 +25,27 @@ ________________________________________________________________________________
 
 4.4. Adding a JIT Compiler
 
+	
+	Tests used in the tutorial:
+		def foo(x) x + 1;
+		foo(2);
+		def foo(x) x + 2;
+		foo(2);
+		extern sin(x);
+		extern cos(x);
+		sin(1.0);
+		def foo(x) sin(x)*sin(x) + cos(x)*cos(x);
+		foo(4.0);
+
+	Our tests:
+		def cat(x) x + 4;
+		cat(2);
+		def cat(x) x + 5;
+		cat(2);
+		extern sin(x);
+		extern cos(x);
+		sin(1.0);
+		def cat(x) sin(x)*sin(x) + cos(x)*cos(x);
+		cat(4.0);
+
 4.5. Full Code Listing

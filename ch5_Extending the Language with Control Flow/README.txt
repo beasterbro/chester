@@ -43,4 +43,29 @@ ________________________________________________________________________________
 
 	5.3.5. Code Generation for the ‘for’ Loop
 
+Since there were no tests for this chapter we elected to use our previous tests to ensure we did not lose any functionality 	
+
+	Tests used in the tutorial:
+		def foo(x) x + 1;
+		foo(2);
+		def foo(x) x + 2;
+		foo(2);
+		extern sin(x);
+		extern cos(x);
+		sin(1.0);
+		def foo(x) sin(x)*sin(x) + cos(x)*cos(x);
+		foo(4.0);
+
+	Our tests:
+		def cat(x) x + 4;
+		cat(2);
+		def cat(x) x + 5;
+		cat(2);
+		extern sin(x);
+		extern cos(x);
+		sin(1.0);
+		def cat(x) sin(x)*sin(x) + cos(x)*cos(x);
+		cat(4.0);
+
+
 5.4. Full Code Listing

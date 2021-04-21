@@ -1,0 +1,9 @@
+extern putchard(char);
+def printstar(n)
+  for i = 1, i < n, 1.0 in
+    putchard(42);  # ascii 42 = '*'
+
+# print 100 '*' characters
+printstar(100);
+
+def printdensity(d) if d > 8 then putchard(32) else if d > 4 then putchard(46) else if d > 2 then putchard(43) else putchard(42);
