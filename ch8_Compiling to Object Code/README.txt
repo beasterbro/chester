@@ -29,4 +29,12 @@ ________________________________________________________________________________
 
 8.6. Putting It All Together
 
+Their Tests
+
+
+Our Tests
+def average(x y z) (x + y + z) * 0.3333;
+
+
+
 8.7. Full Code Listing

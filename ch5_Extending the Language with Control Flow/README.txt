@@ -33,26 +33,13 @@ ________________________________________________________________________________
 Since there were no tests for this chapter we elected to use our previous tests to ensure we did not lose any functionality 	
 
 	Tests used in the tutorial:
-		def foo(x) x + 1;
-		foo(2);
-		def foo(x) x + 2;
-		foo(2);
-		extern sin(x);
-		extern cos(x);
-		sin(1.0);
-		def foo(x) sin(x)*sin(x) + cos(x)*cos(x);
-		foo(4.0);
+		extern putchard(char);
+		def printstar(n) for i = 1, i < n, 1.0 in putchard(42);
+		printstar(100);
 
 	Our tests:
-		def cat(x) x + 4;
-		cat(2);
-		def cat(x) x + 5;
-		cat(2);
-		extern sin(x);
-		extern cos(x);
-		sin(1.0);
-		def cat(x) sin(x)*sin(x) + cos(x)*cos(x);
-		cat(4.0);
-
+		extern putchard(char);
+		def printstar(n) for i = 1, i < n, 1.0 in putchard(43);
+		printstar(100);
 5.4. Full Code Listing
 	This section has all the code used for this chapter of the tutorial.

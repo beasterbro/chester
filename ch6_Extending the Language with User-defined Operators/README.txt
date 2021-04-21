@@ -30,33 +30,18 @@ ________________________________________________________________________________
 6.5. Kicking the Tires
 
 	Tests used in the tutorial:
+	extern putchard(char);
+	def foo(d) d < 8;
+	def printdensity(d) if foo(d) then putchard(42) else 0;
+	printdensity(1);
+	printdensity(9);
 
-		extern putchard(char);
-		def printdensity(d):  if d > 8 then
-    putchard(32)  # ' '
-  else if d > 4 then
-    putchard(46)  # '.'
-  else if d > 2 then
-    putchard(43)  # '+'
-  else
-    putchard(42); # '*'
-
-printdensity(1): printdensity(2): printdensity(3):
-       printdensity(4): printdensity(5): printdensity(9):
-       putchard(10);
-**++.
-mandel(-2.3, -1.3, 0.05, 0.07);
-
-
+We had to nest our if statements so that the functions successfully compile
 	Our tests:
-		def cat(x) x + 4;
-		cat(2);
-		def cat(x) x + 5;
-		cat(2);
-		extern sin(x);
-		extern cos(x);
-		sin(1.0);
-		def cat(x) sin(x)*sin(x) + cos(x)*cos(x);
-		cat(4.0);
+	extern putchard(char);
+	def foo(d) d < 8;
+	def printdensity(d) if foo(d) then putchard(42) else 0;
+	printdensity(1);
+	printdensity(9);
 
 6.6. Full Code Listing

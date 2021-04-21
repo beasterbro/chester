@@ -8,7 +8,7 @@ ________________________________________________________________________________
 
 
 Compilation:
-clang++ -g toy.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core orcjit native` -O3 -o toy
+clang++ -Xlinker --export-dynamic -g toy_udf.cpp `llvm-config-12 --cxxflags --ldflags --system-libs --libs core orcjit native` -O3 -o toy
 
 Running it:
 ./toy
@@ -28,6 +28,13 @@ ________________________________________________________________________________
 7.5. Adjusting Existing Variables for Mutation
 
 7.6. New Assignment Operator
+
+Our Tests
+
+extern printd(x);
+def binary : 1 (x y) y;
+def rest(y)  printd(y) :  y = 3 :  printd(y);
+rest(333);
 
 7.7. User-defined Local Variables
 

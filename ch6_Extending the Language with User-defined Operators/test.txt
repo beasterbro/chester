@@ -7,3 +7,14 @@ def printstar(n)
 printstar(100);
 
 def printdensity(d) if d > 8 then putchard(32) else if d > 4 then putchard(46) else if d > 2 then putchard(43) else putchard(42);
+
+extern putchard(char);
+def printstar(n) for i = 1, i < n, 1.0 in putchard(43);
+printstar(100);
+
+
+
+extern putchard(char);
+def printdensity(d) if d > 8 then putchard(43)
+printdensity(16)
+printdensity(4)
