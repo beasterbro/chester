@@ -18,30 +18,17 @@ ________________________________________________________________________________
 
 
 5.1. Chapter 5 Introduction
+	This chapter of the tutorial adds in the functionality to handle conditional
+	branches. 
 
 5.2. If/Then/Else
-
-	5.2.1. Lexer Extensions for If/Then/Else
-
-	5.2.2. AST Extensions for If/Then/Else
-
-	5.2.3. Parser Extensions for If/Then/Else
-
-	5.2.4. LLVM IR for If/Then/Else
-
-	5.2.5. Code Generation for If/Then/Else
+	In order to add conditional support to the compiler you just need to add
+	support to the lever, AST, parser, and LLVM code emitter. 
 
 5.3. ‘for’ Loop Expression
-
-	5.3.1. Lexer Extensions for the ‘for’ Loop
-
-	5.3.2. AST Extensions for the ‘for’ Loop
-
-	5.3.3. Parser Extensions for the ‘for’ Loop
-
-	5.3.4. LLVM IR for the ‘for’ Loop
-
-	5.3.5. Code Generation for the ‘for’ Loop
+	Similarly to the conditional support in 5.2, in order to add support for 
+	looping we have to simply add the concept to the lever, AST, parser, and 
+	LLVM code emitter. 
 
 Since there were no tests for this chapter we elected to use our previous tests to ensure we did not lose any functionality 	
 
@@ -67,5 +54,5 @@ Since there were no tests for this chapter we elected to use our previous tests 
 		def cat(x) sin(x)*sin(x) + cos(x)*cos(x);
 		cat(4.0);
 
-
 5.4. Full Code Listing
+	This section has all the code used for this chapter of the tutorial.

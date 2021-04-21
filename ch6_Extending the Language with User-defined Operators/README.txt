@@ -8,7 +8,7 @@ ________________________________________________________________________________
 
 
 Compilation:
-clang++ -Xlinker --export-dynamic -g toy_udf.cpp `llvm-config-12 --cxxflags --ldflags --system-libs --libs core orcjit native` -O3 -o toy
+clang++ -Xlinker --export-dynamic -g toy.cpp `llvm-config-12 --cxxflags --ldflags --system-libs --libs core orcjit native` -O3 -o toy
 
 Running it:
 ./toy
@@ -18,15 +18,16 @@ ________________________________________________________________________________
 
 
 6.1. Chapter 6 Introduction
+	This section focuses on adding user defined operators to the language.
 
 6.2. User-defined Operators: the Idea
+	
 
 6.3. User-defined Binary Operators
 
 6.4. User-defined Unary Operators
 
 6.5. Kicking the Tires
-
 
 	Tests used in the tutorial:
 
@@ -57,7 +58,5 @@ mandel(-2.3, -1.3, 0.05, 0.07);
 		sin(1.0);
 		def cat(x) sin(x)*sin(x) + cos(x)*cos(x);
 		cat(4.0);
-
-
 
 6.6. Full Code Listing

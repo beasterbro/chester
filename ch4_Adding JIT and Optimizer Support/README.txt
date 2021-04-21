@@ -8,7 +8,7 @@ ________________________________________________________________________________
 
 
 Compilation:
-clang++ -g toy.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core orcjit native` -O3 -o toy
+clang++ -g toy.cpp `llvm-config-12 --cxxflags --ldflags --system-libs --libs core orcjit native` -O3 -o toy
 
 Running it:
 ./toy
@@ -18,13 +18,19 @@ ________________________________________________________________________________
 
 
 4.1. Chapter 4 Introduction
+	In this chapter of the tutorial we add JIT compiler support and optimizer
+	support. 
 
 4.2. Trivial Constant Folding
+	Constant folding is explained to be important for optimization but apparently
+	is not useful in the case of the AST. 
 
 4.3. LLVM Optimization Passes
+	This section covers the optimization passes built into LLVM. LLVM supports
+	whole module passes as well as per function passes. This means there is 
+	support for passes over large bodies of code as well as single functions.
 
 4.4. Adding a JIT Compiler
-
 	
 	Tests used in the tutorial:
 		def foo(x) x + 1;
@@ -49,3 +55,4 @@ ________________________________________________________________________________
 		cat(4.0);
 
 4.5. Full Code Listing
+	This section has all of the code used for this chapter.

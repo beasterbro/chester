@@ -28,24 +28,29 @@ ________________________________________________________________________________
 	pattern as well as an error logging functionality. 
 
 3.3. Expression Code Generation
+	Code generation for function calls. LLVM symbol table used to resolve 
+	function names. Then does recursive codgers on arguments. 
 
 3.4. Function Code Generation
+	Similar to the section above on expression code generation, this section 
+	is on code generation for the functions. 
 
 3.5. Driver Changes and Closing Thoughts
 	
 	Tests used in the tutorial:
 		4+5;	<-- recursive function definition
 		def foo(a b) a*a + 2*a*b + b*b; 		<-- normal function definition
-		def bar(a) foo(a, 4.0) + bar(31337);		<-- function definition with error
+		def bar(a) foo(a, 4.0) + bar(31337);	<-- function definition with error
 		extern cos(x); 			<-- extern definition
 		^D
 
 	Our tests:
 		3+4;	<-- recursive function definition
 		def got(a b) a+a * 2+a+b * b+b; 		<-- normal function definition
-		def cat(a) got(a, 3.0) + cat(1337);		<-- function definition with error
+		def cat(a) got(a, 3.0) + cat(1337);	<-- function definition with error
 		extern sin(x); 			<-- extern definition
 		sin(1.234);
 		^D
 
 3.6. Full Code Listing
+	The full code listing for this section.
