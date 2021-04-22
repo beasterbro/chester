@@ -21,14 +21,22 @@ ________________________________________________________________________________
 	This section focuses on adding user defined operators to the language.
 
 6.2. User-defined Operators: the Idea
-	
+	This section just covers the concept of user defined operators and how this
+	concept appears, or rather doesn't, in C++.
 
 6.3. User-defined Binary Operators
+	Extend the PrototypeAST function to support user defined binary operators.
+	After this we also need to be able to determine whether it was an operator, 
+	and if it was, what precedence level the given operator has which can be done
+	through parsing the prototype. Lastly, we added support for binary operators
+	in codegen. 
 
 6.4. User-defined Unary Operators
+	Unary operators aren't supported at all in the kaleidoscope language so the
+	support for them and any user defined versions of them have to be added to
+	the compiler code. 
 
 6.5. Kicking the Tires
-
 	Tests used in the tutorial:
 	extern putchard(char);
 	def foo(d) d < 8;
@@ -45,3 +53,4 @@ We had to nest our if statements so that the functions successfully compile
 	printdensity(9);
 
 6.6. Full Code Listing
+	This section has the fully updated code for this section.
